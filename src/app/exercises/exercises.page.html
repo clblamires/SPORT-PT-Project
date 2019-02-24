@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Exercises and Stretches</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let e of exercises" [routerLink]="'/tabs/exercises/exercise/' +  e.exercise_id">
+      <!-- {{ e.name }} -->
+      <ion-thumbnail slot="start">
+        <ion-img src="/assets/exercises/{{e.image_1}}"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h3 class="bold">{{ e.name }}</h3>
+        <h6>{{ e.description }}</h6>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
