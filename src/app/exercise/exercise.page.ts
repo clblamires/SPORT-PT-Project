@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { LoadingController, ToastController, NavController } from '@ionic/angular';
 import { Storage } from '@ionic/storage';
-import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+// import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
 
 
 
@@ -33,14 +33,15 @@ export class ExercisePage implements OnInit {
     public toastCtrl: ToastController,
     public storage: Storage,
     public navCtrl: NavController,
-    public youtube: YoutubeVideoPlayer
+    // public youtube: YoutubeVideoPlayer
   ) {
     let id = this.route.snapshot.paramMap.get("id");
-    this.presentLoading();
+    // this.presentLoading();
     this.exercisesService.getExercise(id).then( data => {
       this.exercise = data;
-      this.exercise.video_url = this.exercise.video_url.replace("watch?v=", "embed/");
-      this.safeVideoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl(this.exercise.video_url);
+      // this.exercise.video_url = this.exercise.video_url.replace("watch?v=", "embed/");
+      // this.safeVideoUrl = this.domSanitizer.bypassSecurityTrustResourceUrl(this.exercise.video_url);
+      // this.dismissLoading();
     });
   }
 
@@ -62,6 +63,8 @@ export class ExercisePage implements OnInit {
       animated: true,
       color: "dark",
       position: "bottom",
+      showCloseButton: true,
+      closeButtonText: 'CLOSE'
       // showCloseButton: true
     });
     this.planService.addExercise(this.exercise).then( () => {
@@ -77,7 +80,9 @@ export class ExercisePage implements OnInit {
       duration: 1500,
       animated: true,
       color: "dark",
-      position: "bottom"
+      position: "bottom",
+      showCloseButton: true,
+      closeButtonText: 'CLOSE'
     });
     this.planService.removeExercise(id).then( () => {
       let currentRoute = this.router.url;

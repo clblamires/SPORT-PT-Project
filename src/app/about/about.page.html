@@ -1,9 +1,47 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>About</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <img src="/assets/logo.png">
+  <ion-card>
+    <ion-card-header>
+      <h1>S.P.O.R.T. Physical Therapy Clinic</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <address>
+        328 Warner Dr, Ste 8<br/>
+        Lewiston, ID 83501<br>
+        208-746-7573
+      </address>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="full" color="primary" (click)="call('2083058130')">
+              <ion-icon name="call"></ion-icon>
+              Call
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="full" color="primary" (click)="getDirections()">
+              <ion-icon name="compass"></ion-icon>
+              Directions
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 
+  <!-- S.P.O.R.T.
+PHYSICAL THERAPY CLINIC
+328 Warner Dr, Suite 8
+Lewiston, ID 83501
+
+ Get Directions
+Phone:	(208) 746-7573
+Fax:	(208) 746-4519
+ -->
 </ion-content>

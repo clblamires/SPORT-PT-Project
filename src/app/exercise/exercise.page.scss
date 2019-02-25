@@ -1,8 +1,16 @@
 iframe {
     width: 100%;
 }
-
-h2 {
-    font-weight: bold;
-    margin-top: 2rem;
+ion-card-header {
+    h2 {
+        margin: 0;
+    }
 }
+
+ion-card-content {
+    h2 {
+        font-weight: bold;
+        margin-top: 2em;
+    }
+}
+

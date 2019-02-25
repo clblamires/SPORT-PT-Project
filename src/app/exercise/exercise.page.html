@@ -23,13 +23,17 @@
 
 <ion-content>
   <ion-card>
-    <iframe 
+    <!-- <iframe 
       [src]="safeVideoUrl ? safeVideoUrl : null" 
       frameborder="0" 
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen 
-      (load)="safeVideoUrl ? dismissLoading() : null"></iframe>
+      (load)="safeVideoUrl ? dismissLoading() : null"></iframe> -->
       <!-- Add this to config.xml: <allow-navigation href="https://*youtube.com/*"/> -->
+    <ion-card-header>
+      <h2>Decription</h2>
+
+    </ion-card-header>
     <ion-card-content padding>
       <p>
         {{ exercise?.description}}
@@ -44,7 +48,7 @@
         *ngIf="!onPlan"
         color="primary" 
         expand="block" 
-        fill="outline"
+        
         (click)="addExerciseToPlan(exercise?.exercise_id)">
         Add to Treatment Plan
       </ion-button>
@@ -52,7 +56,7 @@
         *ngIf="onPlan"
         color="danger" 
         expand="block" 
-        fill="outline"
+        
         (click)="removeExerciseFromPlan(exercise?.exercise_id)">
         Remove from Treatment Plan
       </ion-button>
