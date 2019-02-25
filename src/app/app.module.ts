@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 
 import { HttpModule } from '@angular/http';
 import { ExercisesService } from './exercises.service';
+import { PlanService } from './plan.service';
+
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +21,7 @@ import { ExercisesService } from './exercises.service';
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
+    IonicStorageModule.forRoot(),
     AppRoutingModule,
     HttpModule
   ],
@@ -25,7 +29,8 @@ import { ExercisesService } from './exercises.service';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    ExercisesService
+    ExercisesService,
+    PlanService
   ],
   bootstrap: [AppComponent]
 })

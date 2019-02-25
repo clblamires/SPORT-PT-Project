@@ -1,9 +1,13 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>Exercises and Stretches</ion-title>
   </ion-toolbar>
   <ion-toolbar>
-    <ion-searchbar></ion-searchbar>
+    <ion-searchbar 
+      [(ngModel)]="searchQuery"
+      (ionInput)="getFilteredExercises($event)"
+      (ionClear)="resetList($event)"
+    ></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 

@@ -9,13 +9,33 @@ import { ExercisesService } from '../exercises.service';
 export class ExercisesPage implements OnInit {
 
   exercises: any = null;
+  searchQuery: string = '';
 
   constructor(public exercisesService: ExercisesService) {
     this.exercisesService.getExercises().then( data => {
       this.exercises =  data;
     });
+  }
 
-    this.exercisesService.getExercises();
+  getFilteredExercises( event ){
+    this.exercisesService.getExercises().then( data => {
+      let queryString = event.target.value;
+      if( queryString.trim() == '' ) {
+        this.exercises = data;
+        return;
+      };
+      if ( queryString !== undefined ){
+        this.exercisesService.getFilteredExercises( queryString ).then( filteredData => {
+          this.exercises = filteredData;
+        })
+      }
+    })
+  }
+
+  resetList( event ){
+    this.exercisesService.getExercises().then( data => {
+      this.exercises =  data;
+    });
   }
 
   ngOnInit() {

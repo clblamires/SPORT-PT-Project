@@ -1,14 +1,67 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>{{ exercise?.name }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button 
+        *ngIf="!onPlan"
+        slot="icon-only" 
+        (click)="addExerciseToPlan(exercise?.exercise_id)">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+      <ion-button 
+        *ngIf="onPlan"
+        slot="icon-only" 
+        (click)="removeExerciseFromPlan(exercise?.exercise_id)">
+        <ion-icon name="remove"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <div>
-    <iframe [src]="exercise?.video_url" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+<ion-content>
+  <ion-card>
+    <iframe 
+      [src]="safeVideoUrl ? safeVideoUrl : null" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen 
+      (load)="safeVideoUrl ? dismissLoading() : null"></iframe>
+      <!-- Add this to config.xml: <allow-navigation href="https://*youtube.com/*"/> -->
+    <ion-card-content padding>
+      <p>
+        {{ exercise?.description}}
+      </p>
+
+      <h2>Instructions</h2>
+      <p>
+        {{ exercise?.generic_instructions }}
+      </p>
+
+      <ion-button 
+        *ngIf="!onPlan"
+        color="primary" 
+        expand="block" 
+        fill="outline"
+        (click)="addExerciseToPlan(exercise?.exercise_id)">
+        Add to Treatment Plan
+      </ion-button>
+      <ion-button 
+        *ngIf="onPlan"
+        color="danger" 
+        expand="block" 
+        fill="outline"
+        (click)="removeExerciseFromPlan(exercise?.exercise_id)">
+        Remove from Treatment Plan
+      </ion-button>
+
+      <h2>Pictures</h2>
+      <ion-img *ngIf="exercise?.image_1" src="/assets/exercises/{{ exercise?.image_1 }}"></ion-img>
+      <ion-img *ngIf="exercise?.image_2" src="/assets/exercises/{{ exercise?.image_2 }}"></ion-img>
+      <ion-img *ngIf="exercise?.image_3" src="/assets/exercises/{{ exercise?.image_3 }}"></ion-img>
+    </ion-card-content>
+    
+  </ion-card>
 </ion-content>

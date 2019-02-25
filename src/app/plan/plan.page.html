@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>plan</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Treatment Plan</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  
+  <h3>Treatment Plan</h3>
+  
+  <div *ngIf="plannedExercises?.length > 0; else noExercises">
+    <ion-list>
+      <ion-item *ngFor="let e of plannedExercises" [routerLink]="'/tabs/plan/exercise/' +  e.exercise_id">
+        <ion-label>
+          <h2>{{ e.name }}</h2>
+          <p>{{ e.generic_instructions }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-button (click)="clear()" expand="block" color="danger">Remove all Exercises</ion-button>
+  </div>
+  <ng-template #noExercises>
+    <p>
+      You do not have any exercises or stretches added to your treatment plan. Tab the "Exercises and Stretches" tab to get started.
+    </p>
+  </ng-template>
 
+  <ion-card color="warning">
+    <ion-card-content>
+      Please consult with your physical therapist before doing any of the exercises and stretches listed here
+    </ion-card-content>
+  </ion-card>
+  
+
+  
 </ion-content>

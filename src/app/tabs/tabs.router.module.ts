@@ -26,6 +26,10 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../plan/plan.module#PlanPageModule'
+          },
+          {
+            path: 'exercise/:id',
+            loadChildren: '../exercise/exercise.module#ExercisePageModule'
           }
         ]
       },

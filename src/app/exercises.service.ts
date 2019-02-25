@@ -29,6 +29,18 @@ export class ExercisesService {
     })
   }
 
+  getFilteredExercises(q){
+    return this.load().then( data =>{
+      let filteredExercises = [];
+      for( const e of this.data ){
+        if( e.name.toLowerCase().indexOf(q.toLowerCase()) > -1 ){
+          filteredExercises.push(e);
+        }
+      }
+      return filteredExercises;
+    })
+  }
+
   getExercise(id){
     return this.load().then( data => {
       for( let i = 0; i < this.data.length; i++ ){
@@ -39,6 +51,8 @@ export class ExercisesService {
 
     })// end of then
   }   
+
+
 
 
 }

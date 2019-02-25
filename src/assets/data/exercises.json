@@ -1,1 +1,142 @@
-[{"exercise_id":"5","name":"Calf Stretch","description":"Stand with your hands against a wall, one foot forward and one backward. Keep backward heel on the floor and lean forward until stretch is felt in calf and achilles tendon.","generic_instructions":"Hold for 30 seconds, then relax. Repeat 3 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"7","name":"Dorsi Flexion","description":"Sit with your legs straight in front of you. Place band around one foot and underneath your other foot while grasping with your hand. While stabilizing with one foot, pull the other foot towards you and release slowly.","generic_instructions":"Repeat 15 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"10","name":"Eversion","description":"Place your foot on a small towel roll. Place the band around your weak foot and under the good foot. Grasp the band. TUrn your week foot away from the strong one, and slowly release to neutral.","generic_instructions":"Repeat 15 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"3","name":"Hand Assisted Stretches","description":"As instructed by your therapist, stretch your foot and ankle downward, upward, or sideways.","generic_instructions":"Hold for 10 seconds. Relax, and repeat 3 times","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"9","name":"Inversion","description":"Cross your weak foot over the good foot. Place the band around the weaker foot and wrap underneath the good one. Turn your weak foot away from the good foot and slowly release to neutral position.","generic_instructions":"Repeat 15 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"4","name":"Plantar Fascia Stretch","description":"Sit with your legs crossed. Grasp the forefoot with one hand and pull toes towards your knee until stretch is felt on the bottom of the foot","generic_instructions":"Hold for 30 seconds, then relax. Repeat 3 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"8","name":"Plantar Flexion","description":"Place your heel on a small towel roll. Place the band around one foot and grasp with your hand. Push your foot toward away from you and slowly release to neutral position.","generic_instructions":"Repeat 15 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"2","name":"Sitting Circles","description":"Sit with your foot off the ground. Next, slowly turn your ankle in circles.","generic_instructions":"Repeat 2 times, then change directions. If instructed, place heel on a towel roll and perform circles and\/or draw ABCs with your foot","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"14","name":"Sitting Heel Raises","description":"Sit with both heels on the floor. Next, lift both heels upward towards the ceiling until you are on the ball of your foot, then slowly lower.","generic_instructions":"Repeat 15 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"6","name":"Soleus Stretch","description":"Stand with hands against a wall, one foot forward and one backward. Let backward knee bend slightly and lean into wall until stretch is felt in calf and achilles tendon.","generic_instructions":"Hold for 30 seconds, then relax. Repeat 3 times.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"13","name":"Toe Crunch","description":"Place your foot on a towel on a smooth surface. Pull all toes towards your heel and scrunch foot together.","generic_instructions":"Repeat 3 times for 2 minutes.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"11","name":"Towel Eversion","description":"Place one foot on a towel on smooth floor. Place weight on opposite end of towel. While pivoting on your feel, turn your ankle away from the weight so that the weight is pulled toward the ankle. Your foot should turn away from your body.","generic_instructions":"Repeat 4 to 6 times until weight is close to the ankle, and repeat 3 times. Use 5 lbs for the weight.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"12","name":"Towel Inversion","description":"Place one foot on a towel on smooth floor. Place weight on opposite end of towel. While pivoting on your feel, turn your ankle away from the weight so that the weight is pulled toward the ankle. Your foot should turn toward your body.","generic_instructions":"Repeat 4 to 6 times until weight is close to the ankle, and repeat 3 times. Use 5 lbs for the weight.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null},{"exercise_id":"1","name":"Towel Stretch","description":"Sit with your leg straight and using a towel or belt, wrap it around the ball of your foot. Gently pull back until stretch is felt in calf, behind the knee, and the achilles tendon. The goal is to feel the back of the knee touch the mat, couch, or bed.","generic_instructions":"Hold for 30 seconds. Repeat 3 times. Keep your back straight.","video_url":"https:\/\/www.youtube.com\/watch?v=cUYSGojUuAU","image_1":"towel_stretch_1.png","image_2":null,"image_3":null}]
+[
+    {
+        "exercise_id": "5",
+        "name": "Calf Stretch",
+        "description": "Stand with your hands against a wall, one foot forward and one backward. Keep backward heel on the floor and lean forward until stretch is felt in calf and achilles tendon.",
+        "generic_instructions": "Hold for 30 seconds, then relax. Repeat 3 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "7",
+        "name": "Dorsi Flexion",
+        "description": "Sit with your legs straight in front of you. Place band around one foot and underneath your other foot while grasping with your hand. While stabilizing with one foot, pull the other foot towards you and release slowly.",
+        "generic_instructions": "Repeat 15 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "10",
+        "name": "Eversion",
+        "description": "Place your foot on a small towel roll. Place the band around your weak foot and under the good foot. Grasp the band. TUrn your week foot away from the strong one, and slowly release to neutral.",
+        "generic_instructions": "Repeat 15 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "3",
+        "name": "Hand Assisted Stretches",
+        "description": "As instructed by your therapist, stretch your foot and ankle downward, upward, or sideways.",
+        "generic_instructions": "Hold for 10 seconds. Relax, and repeat 3 times",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "9",
+        "name": "Inversion",
+        "description": "Cross your weak foot over the good foot. Place the band around the weaker foot and wrap underneath the good one. Turn your weak foot away from the good foot and slowly release to neutral position.",
+        "generic_instructions": "Repeat 15 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "4",
+        "name": "Plantar Fascia Stretch",
+        "description": "Sit with your legs crossed. Grasp the forefoot with one hand and pull toes towards your knee until stretch is felt on the bottom of the foot",
+        "generic_instructions": "Hold for 30 seconds, then relax. Repeat 3 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "8",
+        "name": "Plantar Flexion",
+        "description": "Place your heel on a small towel roll. Place the band around one foot and grasp with your hand. Push your foot toward away from you and slowly release to neutral position.",
+        "generic_instructions": "Repeat 15 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "2",
+        "name": "Sitting Circles",
+        "description": "Sit with your foot off the ground. Next, slowly turn your ankle in circles.",
+        "generic_instructions": "Repeat 2 times, then change directions. If instructed, place heel on a towel roll and perform circles and/or draw ABCs with your foot",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "14",
+        "name": "Sitting Heel Raises",
+        "description": "Sit with both heels on the floor. Next, lift both heels upward towards the ceiling until you are on the ball of your foot, then slowly lower.",
+        "generic_instructions": "Repeat 15 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "6",
+        "name": "Soleus Stretch",
+        "description": "Stand with hands against a wall, one foot forward and one backward. Let backward knee bend slightly and lean into wall until stretch is felt in calf and achilles tendon.",
+        "generic_instructions": "Hold for 30 seconds, then relax. Repeat 3 times.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "13",
+        "name": "Toe Crunch",
+        "description": "Place your foot on a towel on a smooth surface. Pull all toes towards your heel and scrunch foot together.",
+        "generic_instructions": "Repeat 3 times for 2 minutes.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "11",
+        "name": "Towel Eversion",
+        "description": "Place one foot on a towel on smooth floor. Place weight on opposite end of towel. While pivoting on your feel, turn your ankle away from the weight so that the weight is pulled toward the ankle. Your foot should turn away from your body.",
+        "generic_instructions": "Repeat 4 to 6 times until weight is close to the ankle, and repeat 3 times. Use 5 lbs for the weight.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "12",
+        "name": "Towel Inversion",
+        "description": "Place one foot on a towel on smooth floor. Place weight on opposite end of towel. While pivoting on your feel, turn your ankle away from the weight so that the weight is pulled toward the ankle. Your foot should turn toward your body.",
+        "generic_instructions": "Repeat 4 to 6 times until weight is close to the ankle, and repeat 3 times. Use 5 lbs for the weight.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    },
+    {
+        "exercise_id": "1",
+        "name": "Towel Stretch",
+        "description": "Sit with your leg straight and using a towel or belt, wrap it around the ball of your foot. Gently pull back until stretch is felt in calf, behind the knee, and the achilles tendon. The goal is to feel the back of the knee touch the mat, couch, or bed.",
+        "generic_instructions": "Hold for 30 seconds. Repeat 3 times. Keep your back straight.",
+        "video_url": "https://www.youtube.com/watch?v=cUYSGojUuAU",
+        "image_1": "towel_stretch_1.png",
+        "image_2": null,
+        "image_3": null
+    }
+]

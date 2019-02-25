@@ -1,5 +1,7 @@
 {
   "name": "SPORT_PT",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
