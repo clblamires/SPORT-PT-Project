@@ -8,28 +8,45 @@
   
   <h3>Treatment Plan</h3>
   
-  <div *ngIf="plannedExercises?.length > 0; else noExercises">
+  <div *ngIf="plannedExercises?.length > 0; else noStretches">
     <ion-list>
-      <ion-item *ngFor="let e of plannedExercises" [routerLink]="'/tabs/plan/exercise/' +  e.exercise_id">
-        <ion-label>
-          <h2>{{ e.name }}</h2>
-          <p>{{ e.generic_instructions }}</p>
-        </ion-label>
-      </ion-item>
+      <ion-item-sliding *ngFor="let e of plannedExercises">
+        <ion-item [routerLink]="'/tabs/plan/exercise/' +  e.exercise_id">
+          <ion-label>
+            <h2>{{ e.name }}</h2>
+            <p>{{ e.generic_instructions }}</p>
+          </ion-label>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" (click)="removeExercise(e)">
+            <ion-icon name="trash"></ion-icon> Remove
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
     </ion-list>
+
+
+
+
+
+
     <ion-button (click)="clear()" expand="block" color="danger">Remove all Exercises</ion-button>
   </div>
-  <ng-template #noExercises>
-    <p>
-      You do not have any exercises or stretches added to your treatment plan. Tab the "Exercises and Stretches" tab to get started.
+  <ng-template #noStretches>
+    <p class="no-stretches">
+      You do not have stretches added to your treatment plan. Tap the "Stretches" button to get started.
     </p>
   </ng-template>
 
-  <ion-card color="warning">
+  <!-- <ion-card color="danger">
     <ion-card-content>
-      Please consult with your physical therapist before doing any of the exercises and stretches listed here
+      <ion-button class="float-right" fill="outline" color="dark">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+      <span>Please consult with your physical therapist before doing any of the exercises and stretches listed here</span>
+      
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
   
 
   

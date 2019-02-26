@@ -45,7 +45,7 @@ export class ExercisePage implements OnInit {
     });
   }
 
-  ionViewDidEnter(){
+  ionViewWillEnter(){
     this.exerciseIsOnPlan();
   }
 

@@ -6,28 +6,26 @@
 
 <ion-content padding>
   <img src="/assets/logo.png">
-  <ion-card>
+  <ion-card *ngFor="let clinic of clinics">
     <ion-card-header>
-      <h1>S.P.O.R.T. Physical Therapy Clinic</h1>
+      <h3>{{ clinic.name }}</h3>
     </ion-card-header>
     <ion-card-content>
       <address>
-        328 Warner Dr, Ste 8<br/>
-        Lewiston, ID 83501<br>
-        208-746-7573
+        {{ clinic.address }}<br/>
+        {{ clinic.city }}, {{ clinic.state }} {{ clinic.zip }}<br>
+        {{ getPhone(clinic.phone) }}
       </address>
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-button expand="full" color="primary" (click)="call('2083058130')">
-              <ion-icon name="call"></ion-icon>
-              Call
+            <ion-button expand="full" color="primary" (click)="call(clinic.phone)">
+              <ion-icon name="call"></ion-icon> Call
             </ion-button>
           </ion-col>
           <ion-col>
-            <ion-button expand="full" color="primary" (click)="getDirections()">
-              <ion-icon name="compass"></ion-icon>
-              Directions
+            <ion-button expand="full" color="primary" (click)="getDirections(clinic)">
+              <ion-icon name="compass"></ion-icon> Directions
             </ion-button>
           </ion-col>
         </ion-row>

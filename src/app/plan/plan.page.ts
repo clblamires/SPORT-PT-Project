@@ -12,6 +12,7 @@ import { AlertController } from '@ionic/angular';
 export class PlanPage implements OnInit {
 
   plannedExercises: any = null;
+  totalExercises: number = 0;
 
   constructor( 
     public planService: PlanService, 
@@ -23,9 +24,23 @@ export class PlanPage implements OnInit {
   
   ionViewWillEnter(){
     // this.plannedExercises = this.planService.getPlannedExercises();
+    this.getExercises();
+  }
+
+  getExercises(){
     this.planService.getAllPlannedExercises().then( data => {
       this.plannedExercises = data;
-    })
+      // console.log(this.plannedExercises.length);
+      if( this.plannedExercises ){
+        this.totalExercises = this.plannedExercises.length;
+      }
+    });
+  }
+
+  removeExercise( exercise ){
+    this.planService.removeExercise(exercise).then( () => {
+      this.getExercises();
+    });
   }
 
   async clear(){
@@ -44,7 +59,6 @@ export class PlanPage implements OnInit {
       }]
     });
     sure.present();
-    
   }
 
 }

@@ -4,20 +4,6 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>{{ exercise?.name }}</ion-title>
-    <ion-buttons slot="end">
-      <ion-button 
-        *ngIf="!onPlan"
-        slot="icon-only" 
-        (click)="addExerciseToPlan(exercise?.exercise_id)">
-        <ion-icon name="add"></ion-icon>
-      </ion-button>
-      <ion-button 
-        *ngIf="onPlan"
-        slot="icon-only" 
-        (click)="removeExerciseFromPlan(exercise?.exercise_id)">
-        <ion-icon name="remove"></ion-icon>
-      </ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
