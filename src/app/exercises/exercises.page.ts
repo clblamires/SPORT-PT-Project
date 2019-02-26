@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ExercisesService } from '../exercises.service';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
+import { IonSearchbar } from '@ionic/angular';
 
 @Component({
   selector: 'app-exercises',
@@ -11,7 +13,9 @@ export class ExercisesPage implements OnInit {
   exercises: any = null;
   searchQuery: string = '';
 
-  constructor(public exercisesService: ExercisesService) {
+  @ViewChild('searchbar') searchbar: IonSearchbar;
+
+  constructor(public exercisesService: ExercisesService, public keyboard: Keyboard) {
     this.exercisesService.getExercises().then( data => {
       this.exercises =  data;
     });
@@ -36,6 +40,15 @@ export class ExercisesPage implements OnInit {
     this.exercisesService.getExercises().then( data => {
       this.exercises =  data;
     });
+    this.keyboard.hide();
+  }
+
+  ionViewWillEnter(){
+    if( this.searchQuery.length > 0 ){
+      this.searchbar.setFocus();
+    } else {
+      this.keyboard.hide();
+    }
   }
 
   ngOnInit() {
